@@ -1,0 +1,53 @@
+.seed-by-seed {
+  background: #f7f7f7;
+  padding: 70px 300px;
+
+
+  &__image {
+    display: grid;
+    grid-gap: 20px;
+    grid-column: 1/2;
+    position: relative;
+    left: 70px;
+
+  }
+
+  &__text-content {
+    margin-top: 50px;
+    display: grid;
+    grid-column: 3/3;
+    justify-items: start;
+    margin-left: 60px;
+    margin-bottom: 100px;
+
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    left: 145px;
+  }
+
+  p {
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    top: 50px;
+    right: 30px;
+    padding-top: 20px;
+  }
+
+  .btn {
+    border: none;
+    position: relative;
+    left: 127px;
+    padding-top: 10px;
+    height: 50px;
+    }
+}
+
+.seed-nested {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+}

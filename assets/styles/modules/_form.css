@@ -1,0 +1,47 @@
+.form {
+  background: #f0f0f0;
+
+  .form-group {
+    padding-top: 20px;
+    display: block;
+    grid-column: 1/1;
+    grid-row-start: 2;
+    justify-self: center;
+
+    .btn {
+      margin-left: 10px;
+    }
+  }
+
+  p {
+    grid-column: 1/1;
+    grid-row-start: 3;
+    font-size: .8rem;
+  }
+
+  label {
+    display: grid;
+    grid-row-start: 1;
+    text-align: left;
+  }
+
+  .email {
+    width: 250px;
+    padding-left: 5px;
+    font-size: .9rem;
+  }
+
+  .zip {
+    width: 100px;
+    margin-left: 10px;
+  padding-left: 5px;
+    font-size: .9rem;
+  }
+}
+
+.form-nested {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 15px 600px;
+}

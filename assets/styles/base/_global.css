@@ -1,0 +1,14 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-size: cover;
+  margin: 0;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}

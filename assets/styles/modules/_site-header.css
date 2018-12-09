@@ -1,0 +1,90 @@
+.site-header {
+
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-top: 10px solid #006341;
+  background-color: #f7f7f7;
+
+  .menu-content {
+    float: none;
+
+    @mixin atMedium {
+      float: right;
+    }
+  }
+
+  @mixin atMedium {
+    background-color: #f7f7f7;
+    left: auto;
+    padding-bottom: 30px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    @mixin clearfix;
+    @mixin atMedium {
+      float: right;
+      display: block;
+    
+      padding-right: 100px;
+    }
+  }
+
+  li {
+    list-style: none;
+    float: none;
+    padding: 20px 0;
+    width: 100%;
+    border: 2px solid rgba(0,0,0,.2);
+    background: rgba(0,0,0,.2);
+    text-align: center;
+
+    @mixin atMedium {
+      float: none;
+      display: block;
+      width: auto;
+      border: none;
+      background: none;
+      padding-right: 40px;
+    }
+  }
+
+ul li {
+  display: block;
+}
+
+.active {
+  display: block;
+}
+
+
+ul li:hover {
+  background: #333;
+  transition-property: all;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+}
+
+.toggle {
+  width: 100%;
+  padding: 40px 20px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .toggle {
+    display: block;
+  }
+}
+}

@@ -1,0 +1,57 @@
+.art-of-coffee {
+  background: #f4ede4;
+
+  padding: 50px 300px;
+
+
+  &__image {
+    display: grid;
+    grid-gap: 20px;
+    grid-column: 1/2;
+    position: relative;
+    left: 100px;
+
+  }
+
+  &__text-content {
+    margin-top: 50px;
+    display: grid;
+    grid-column: 3/3;
+    justify-items: start;
+    margin-left: 60px;
+    margin-bottom: 100px;
+
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    left: 180px;
+    top: 40px;
+  }
+
+  p {
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    top: 90px;
+    right: 155px;
+    padding-top: 20px;
+    line-height: 1.9em;
+    word-spacing: .1em;
+  }
+
+  .btn {
+    border: none;
+    position: relative;
+    left: 165px;
+    padding-top: 60px;
+    height: 50px;
+    }
+}
+
+.art-nested {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+}
